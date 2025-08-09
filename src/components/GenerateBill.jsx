@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-import BillPDF from './BillPdf';
+import BillPDF from './BillPDF';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { set } from 'zod';
 const BACKEND_URL = process.env.BACKEND_URL;
