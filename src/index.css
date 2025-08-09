@@ -1,0 +1,155 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+.gap-2{
+  gap: 0.5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+}
+.navbar li {
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.link:hover{
+  color: #007bff;
+  transform: scale(0.95);
+  transition: transform 0.5s ease-in-out;
+  border-bottom: 2px solid #007bff;
+}
+.active-link {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+.add-form{
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+    padding: 10px 5px;
+    align-items: center;
+}
+.add-form-input {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+}
+.add-bill-input{
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.bill-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.submit-button{
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+.buyer-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.bill-item-grid{
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.2fr;
+  gap: 0.2rem;
+  width: 90%;
+}
+.delete-button{
+  background-color: transparent;
+  /* color: white; */
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.delete-icon{
+  color: rgb(179, 7, 7);
+}
+.delete-icon:hover {
+  color: red;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-form {
+    width: 100%;
+    padding: 10px 5px;
+    align-items: center;
+  }
+}
+.search-filter{
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+.search-filter input{
+  width: 20%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bill-card{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
