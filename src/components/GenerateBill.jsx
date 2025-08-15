@@ -7,7 +7,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import BillPDF from './BillPDF';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { set } from 'zod';
-const BACKEND_URL = process.env.BACKEND_URL;
+const BACKEND_URL = import.meta.env.BACKEND_URL;
 
 const GenerateBill = () => {
   const [buyer, setBuyer] = useState({ buyer_name: '', address: '', mobile_number: '' });

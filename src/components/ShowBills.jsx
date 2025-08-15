@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
-const BACKEND_URL = process.env.BACKEND_URL;
+const BACKEND_URL = import.meta.env.BACKEND_URL;
 
 const ShowBills = () => {
   const [bills, setBills] = useState([]);

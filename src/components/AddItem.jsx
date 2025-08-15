@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const BACKEND_URL = process.env.BACKEND_URL;
+const BACKEND_URL = import.meta.env.BACKEND_URL;
 
 const AddItem = () => {
   const [form, setForm] = useState({
